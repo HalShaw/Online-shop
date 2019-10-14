@@ -1,6 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <nav>
+      <div class="container">
+        <ul class="nav__left">
+
+          <!-- Navigation Links -->
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/admin">Admin</router-link></li>
+          <li><router-link to="/cart">Cart</router-link></li>
+
+        </ul>
+      </div>
+    </nav>
     <router-view/>
   </div>
 </template>
@@ -18,6 +29,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>
